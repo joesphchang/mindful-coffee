@@ -13,9 +13,6 @@ import Store from './Pages/Store';
 function App() {
 	return (
 		<div className='main_container'>
-			<h1 className='text-3xl font-bold underline'>
-				Hello World
-			</h1>
 			<Navigation />
 			<Routes>
 				<Route index path='/' element={<Home />} />
