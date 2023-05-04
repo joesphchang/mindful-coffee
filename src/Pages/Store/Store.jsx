@@ -1,8 +1,9 @@
 import React from 'react'
+import './Store.scss';
 
 function Store() {
   return (
-    <div>Store</div>
+    <div className='store'>Store</div>
   )
 }
 
