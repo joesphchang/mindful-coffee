@@ -1,14 +1,14 @@
-import { RouterProvider, createBrowserRouter, Outlet } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import './app.scss';
 import Footer from './Components/Footer/Footer';
 import Navigation from './Components/Navigation/Navigation';
-import About from './Pages/About/About';
-import Blog from './Pages/Blog/Blog';
-import Home from './Pages/Home/Home';
-import Login from './Pages/Login/Login';
-import Product from './Pages/Product/Product';
-import Register from './Pages/Register/Register';
-import Store from './Pages/Store/Store';
+import About from './pages/About/About';
+import Blog from './pages/Blog/Blog';
+import Home from './pages/Home/Home';
+import Login from './pages/Login/Login';
+import Product from './pages/Product/Product';
+import Register from './pages/Register/Register';
+import Store from './pages/Store/Store';
 
 const Layout = () => {
 	return (
@@ -26,31 +26,31 @@ const router = createBrowserRouter([
 		element: <Layout />,
 		children: [
 			{
-				paths: '/',
+				path: '/',
 				element: <Home />,
 			},
 			{
-				paths: '/store',
+				path: '/store',
 				element: <Store />,
 			},
 			{
-				paths: '/product:/:id',
+				path: '/product:/:id',
 				element: <Product />,
 			},
 			{
-				paths: '/blog',
+				path: '/blog',
 				element: <Blog />,
 			},
 			{
-				paths: '/about',
+				path: '/about',
 				element: <About />,
 			},
 			{
-				paths: '/login',
+				path: '/login',
 				element: <Login />,
 			},
 			{
-				paths: '/register',
+				path: '/register',
 				element: <Register />,
 			},
 		],
