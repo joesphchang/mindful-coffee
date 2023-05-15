@@ -13,7 +13,9 @@ const Navigation = () => {
   return (
     <div className='navigation'>
       <div className="logo">
+        <Link to='/' className='link' >
         Mindful Coffee
+        </Link>
       </div>
       <div className="nav-item">
         <div className="item">
@@ -26,7 +28,7 @@ const Navigation = () => {
           <Link to='/blog' className='link'>Blog</Link>
         </div>
         <div className="item">
-          <Link to='/about' className='link'>About</Link>
+          <Link to='/about' className='link'>Our Story</Link>
         </div>
         <PersonSharpIcon />
         <div className="cart">

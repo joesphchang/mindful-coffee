@@ -1,0 +1,18 @@
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 25px;
+
+    .left{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right {
+        img {
+            height: 850px;
+        }
+    }
+}

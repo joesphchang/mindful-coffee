@@ -6,7 +6,6 @@ function Home() {
   return (
     <div className='home'>
       <Slider />
-      this is Home.
     </div>
   )
 }
