@@ -1,0 +1,13 @@
+.featured-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .center {
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 75%;
+        }
+    }
+}
